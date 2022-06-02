@@ -14,7 +14,8 @@
             android:exported="false"
             android:label=""
             android:theme="@style/EasyPermissions.Transparent" />
-        <receiver android:name=".receiver.DownLoadReceiver">
+        <receiver android:name=".receiver.DownLoadReceiver"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
             </intent-filter>

@@ -22,7 +22,8 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +32,7 @@
         </activity>
         <activity
             android:name=".RuleActivity"
+            android:exported="false"
             android:theme="@style/AppNoTitleTheme" />
 
         <!--        <receiver android:name="com.db.policylib.receiver.DownLoadReceiver">-->
